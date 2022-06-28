@@ -3,7 +3,7 @@ We'll use this section to post work throughout the sessions. This page will upda
 
 ---
 
-### Day 0 | Day 0b000 | Day 0x0 : 6/28
+### Day 0 | Day 0b0000 | Day 0x00 : 6/29
 Intros
 - course
 - instructors
@@ -38,7 +38,7 @@ https://docs.google.com/presentation/d/1yVJmlQIKBpRKl0enOIwOjuRF3cPIfbY9RBnvJw-L
 
 * * *
 
-### Day 1 | Day 0b001 | Day 0x1 : 6/29
+### Day 1 | Day 0b0001 | Day 0x01 : 6/30
 
 Pre-work demos, Q&A
 
@@ -131,7 +131,7 @@ Lecture: 1D arrays
 
 * * *
 
-### Day 2 | Day 0b010 | Day 0x2 : 6/30
+### Day 2 | Day 0b0010 | Day 0x02 : 7/1
 
 Demo(s) game of Nim
 
@@ -201,7 +201,7 @@ http://pythontutor.com/java.html#code=public%20class%20YourClassNameHere%20%7B%0
 
 * * *
 
-### Day 3 | Day 0b011 | Day 0x3 : 7/01
+### Day 3 | Day 0b0011 | Day 0x03 : 7/5
 
 Workflow demo/PROTIPS
 
@@ -286,7 +286,7 @@ _YOUR CODING MISSION:_
 
 * * *
 
-### Day 4 | Day 0b100 | Day 0x4 : 7/02
+### Day 4 | Day 0b0100 | Day 0x04 : 7/6
 
 Lab work time in small groups. (CGOL)
 
@@ -319,7 +319,7 @@ _YOUR CODING MISSION:_
 
 * * *
 
-### Day 5 | Day 0b101 | Day 0x5 : 7/06
+### Day 5 | Day 0b0101 | Day 0x05 : 7/7
 
 Lab work time in small groups. (recursion)
 
@@ -436,7 +436,7 @@ _YOUR CODING MISSION:_
 * * *
 
 
-### Day 6 | Day 0b110 | Day 0x6 : 7/07
+### Day 6 | Day 0b0110 | Day 0x06 : 7/8
 
 Lab work time in small groups. 
 
@@ -487,7 +487,7 @@ _YOUR CODING MISSION:_
 
 * * *
 
-### Day 7 | Day 0b111 | Day 0x7 : 7/08
+### Day 7 | Day 0b0111 | Day 0x07 : 7/11
 
 Lab work time in small groups. 
 
