@@ -66,7 +66,7 @@ Write a program that will allow a human at console to play against your "AI" a g
   - Include heading at top of file, as comment. List all collaborators and consultants. E.g.,
       ```java
       /**
-       * Game of Nim
+       * Game of Nim by Team BossCoders
        * First Last
        * collaborators: First Last, First Last
        */
