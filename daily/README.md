@@ -61,6 +61,15 @@ Write a program that will allow a human at console to play against your "AI" a g
   - Have a Q? Ask.
   - Confident in your skills/knowledge? _See how well you can explain it._
 
+- SUGGESTED WORKFLOW:
+  - Designate "slacker" to interact with slack.
+  - Designate "driver" to screenshare and type.
+  - All parties dialogue as you compose code.
+  - Think about who you will designate as presenter, should you demo to entire cohort.
+
+- PROTIP:
+  - Never stray far from _runnable code_.
+  
 - DELIVERABLE:
   - Save in your_work_repo: `programming/1/Nim.java`
   - Include heading at top of file, as comment. List all collaborators and consultants. E.g.,
