@@ -115,7 +115,7 @@ With your new team, write a program to facilitate a mancala game in the terminal
   - Have a Q? Ask.
   - Confident in your skills/knowledge? _See how well you can explain it._
 - DELIVERABLE:
-  - Save in your work repo: `2/Mancala.java`
+  - Save in your work repo: `programming/1or2/Mancala.java`
   - Include heading at top of file, as comment. List all collaborators and consultants.
 
 Lecture: Basics of Recursion
