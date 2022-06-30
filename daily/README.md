@@ -41,7 +41,7 @@ Write a program that will allow a human at console to play against your "AI" a g
        */
       ```
 
-Lecture: Java basics, 1D arrays
+#### Lecture: Java basics, 1D arrays
 
 new team formation...
 
