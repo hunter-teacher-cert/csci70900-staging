@@ -27,8 +27,9 @@ Write a program that will allow a human at console to play against your "AI" a g
   - All parties dialogue as you compose code.
   - Think about who you will designate as presenter, should you demo to entire cohort.
 
-- PROTIP:
+- PROTIPs:
   - Never stray far from _runnable code_.
+  - Comments galore!!!
   
 - DELIVERABLE:
   - Save in your_work_repo: `programming/1/Nim.java`
