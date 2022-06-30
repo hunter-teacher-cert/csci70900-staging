@@ -65,7 +65,11 @@ Write a program that will allow a human at console to play against your "AI" a g
   - Save in your_work_repo: `programming/1/Nim.java`
   - Include heading at top of file, as comment. List all collaborators and consultants. E.g.,
       ```java
-
+      /**
+       * Game of Nim
+       * First Last
+       * collaborators: First Last, First Last
+       */
       ```
 
 Lecture: Java basics, 1D arrays
