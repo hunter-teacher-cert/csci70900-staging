@@ -2,41 +2,54 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * Conway's Game of Life Team AreWeSentientYet?
+ * First Last
+ * collaborators: First Last, First Last
+ */
+
+/**
    The Rules of Life:
+
    Survivals:
    * A cell with 2 or 3 living neighbours will survive for the next generation.
-   Death:
+
+   Deaths:
    * Each cell with >3 neighbours will die from overpopulation.
    * Every cell with <2 neighbours will die from isolation.
-   Birth:
+
+   Births:
    * Each dead cell adjacent to exactly 3 living neighbours is a birth cell. It will come alive next generation.
 
-   NOTA BENE:  All births and deaths occur simultaneously. Together, they constitute a single generation
+   NOTA BENE:  All births and deaths occur simultaneously. Together, they constitute a single generation.
 */
 
 public class Cgol
 {
 
   //initialize empty board (all cells dead)
-  public static char[][] createNewBoard(int rows, int cols) {
+  public static char[][] createNewBoard( int rows, int cols )
+  {
 
   }
 
 
   //print the board to the terminal
-  public static void printBoard(char[][] board) {
+  public static void printBoard( char[][] board )
+  {
 
   }
 
 
   //set cell (r,c) to val
-  public static void setCell(char[][] board, int r, int c, char val){
+  public static void setCell( char[][] board, int r, int c, char val )
+  {
 
   }
 
 
   //return number of living neigbours of board[r][c]
-  public static int countNeighbours(char[][] board, int r, int c) {
+  public static int countNeighbours( char[][] board, int r, int c )
+  {
 
   }
 
@@ -46,13 +59,15 @@ public class Cgol
      postcond: return next generation cell state based on CGOL rules
      (alive 'X', dead ' ')
   */
-  public static char getNextGenCell(char[][] board,int r, int c) {
+  public static char getNextGenCell( char[][] board,int r, int c )
+  {
 
   }
 
 
   //generate new board representing next generation
-  public static char[][] generateNextBoard(char[][] board) {
+  public static char[][] generateNextBoard( char[][] board )
+  {
 
   }
 
