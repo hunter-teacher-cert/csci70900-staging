@@ -455,35 +455,3 @@ With your new team, write a program to facilitate a mancala game in the terminal
 
 
 
-#### Work: 1D Array Lab
-_GOAL:_
-
-Gain working familiarity with one-dimensional arrays in Java, or augment prior knowledge.
-
-_YOUR CODING MISSION:_
-
-Use the provided skeleton to put your array knowledge into practice.
-- Grow cohort KB ("knowledge base") on slack:
-- Have a Q? Ask.
-- Confident in your skills/knowledge? _See how well you can explain it._
-
-- SUGGESTED WORKFLOW:
-  - Designate "slacker" to interact with slack. (esp. #java-fu and #replit-fu for now...)
-  - Designate "driver" to screenshare and type. Multiplayer mode also fine.
-  - All parties dialogue as you compose code.
-  - Think about who you will designate as presenter, should you demo to entire cohort.
-
-- PROTIPs:
-  - Never stray far from _runnable code_.
-  - Comments galore!!!
-  
-- DELIVERABLE:
-  - Save in your_work_repo: `programming/2/ArrayPractice.java`
-  - Include heading at top of file, as comment. List all collaborators and consultants. E.g.,
-      ```java
-      /**
-       * 1D Array Practice by Team LucidThinkeren
-       * First Last
-       * collaborators: First Last, First Last
-       */
-      ```
