@@ -12,7 +12,7 @@ _GUIDELINES:_
 __The Rules of Life:__
 
 Survivals: 
-  - Every cell with 2 or 3 living neighbours survives for the next generation.
+  - Every living cell with 2 or 3 living neighbours survives for the next generation.
 
 Death:
   - Each cell with >3 neighbours dies from overpopulation.
@@ -40,7 +40,7 @@ _YOUR CODING MISSION:_
   - Have a Q? Ask.
   - Confident in your skills/knowledge? _See how well you can explain it._
 - DELIVERABLE:
-  - Save in your_work_repo: `3/Cgol.java`
+  - Save in your_work_repo: `programming/3/Cgol.java`
   - Include heading at top of file, as comment. List all collaborators and consultants.
 
 * * *
