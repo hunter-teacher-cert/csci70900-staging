@@ -36,6 +36,7 @@ _YOUR CODING MISSION:_
 - Need to tune your mental model? Play here: https://playgameoflife.com/
 - That one not fancy enough for you? Play here: https://gameoflife.pro/
 - Want more background? Read up here: https://en.wikipedia.org/wiki/The_Game_of_Life
+- ...or here: https://www.nytimes.com/2020/12/28/science/math-conway-game-of-life.html
 - Grow cohort KB ("knowledge base") on slack:
   - Have a Q? Ask.
   - Confident in your skills/knowledge? _See how well you can explain it._
