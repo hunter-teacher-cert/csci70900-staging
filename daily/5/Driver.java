@@ -1,15 +1,26 @@
 import java.io.*;
 import java.util.*;
 
-public class Driver {
+public class Driver
+{
+  public static void main( String[] args )
+  {
 
-  public static void main(String[] args) {
+    //declare a var of type Wagon
+    Wagon w;
 
-    //declare a var of appropriate type to assign an instance of Time to
-    Time t;
+    //assign var the address of a newly-apportioned Wagon object
+    w = new Wagon();
 
-    //assign var the address of a newly-apportioned Time object
-    t = new Time();
+    //Q: how does this statement behave when a is pvt? public?
+    System.out.println(w.a);
+
+    System.out.println(w.getA());
+
+    w.setA(0);
+
+    System.out.println(w.getA());
+
   }//end main()
 
 }//end class
