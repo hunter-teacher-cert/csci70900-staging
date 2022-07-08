@@ -1,6 +1,11 @@
+// Clyde "Thluffy" Sinclair
+// APCS p0
+// HW49
+// 2021-12-23r
+
 /**
  * Driver for class Rational (v3)
- */
+ **/
 
 public class Driver
 {
@@ -113,7 +118,7 @@ public class Driver
          vnn: -2 / 3
          vnd: 2 / -3
          vnnd: -2 / -3
-       */
+       **/
       System.out.println( "r > t: " +  r.compareTo(t) ); // -1
       System.out.println( "r > s: " +  r.compareTo(s) ); // 1
       System.out.println( "s > t: " +  s.compareTo(t) ); // -1

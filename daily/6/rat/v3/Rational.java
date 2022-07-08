@@ -1,21 +1,24 @@
-
 /**
- * class Rational (v1)
+ * class Rational (v3)
  * stores a rational number (p/q s.t. p,q ints && q!=0)
  * facilitates
  * multiplication
  * division
+ * reduction
+ * comparison
  **/
 
-public class Rational
+public class Rational implements Comparable
 {
-  //   Instance variables for numerator and denominator
+  // Instance variables for numerator and denominator
   private int _numerator;
   private int _denominator;
 
 
-  // Default constructor (no parameters)
-  // creates a new Rational with value 0/1
+  /***
+   * Default constructor (no parameters)
+   * @return a new Rational with value 0/1
+   ***/
   public Rational()
   {
     _numerator = 0;
@@ -23,9 +26,12 @@ public class Rational
   }
 
 
-  // Constructor
-  // takes 2 parameters, one for the numerator, one for the denominator
-  // if an invalid denominator is attempted, should print a message and set the number to 0/1
+  /***
+   * Overloaded constructor
+   * @param numerator
+   * @param denominator
+   * if an invalid denominator is attempted, should print a message and set the number to 0/1
+   ***/
   public Rational( int n, int d )
   {
     this();
@@ -83,40 +89,115 @@ public class Rational
   }
 
 
-  //main method for testing
-  public static void main( String[] args )
+  //increases this Rational by value of input Rational
+  public void add( Rational r )
   {
-      Rational r = new Rational( 3, 7 );
-      Rational s = new Rational();
-      Rational t = new Rational( 8, 5 );
+    _numerator = _numerator * r._denominator + r._numerator * _denominator;
+    _denominator = _denominator * r._denominator;
+  }
 
-      Rational u = new Rational( 1, 2 );
-      Rational v = new Rational( 2, 3 );
-      Rational w = new Rational( 8, 12 );
 
-      Rational x = new Rational( 8, 12 );
-      String y = "yoo";
+  //decreases this Rational by value of input Rational
+  public void subtract( Rational r )
+  {
+    _numerator = _numerator * r._denominator - r._numerator * _denominator;
+    _denominator = _denominator * r._denominator;
+  }
 
-      System.out.println("r: " + r );
-      System.out.println("s: " +  s );
-      System.out.println("t: " +  t );
 
-      System.out.println( r + " as a floating pt approximation: "
-      + r.floatValue() );
-      System.out.println( s + " as a floating pt approximation: "
-      + s.floatValue() );
-      System.out.println( t + " as a floating pt approximation: "
-      + t.floatValue() );
+  //reduces this Rational to simplest fraction
+  public void reduce()
+  {
+    int g = gcd();
+    _numerator = _numerator / g;
+    _denominator = _denominator / g;
 
-      System.out.print( r + " * " + t + " = ");
-      r.multiply(t);
-      System.out.println(r);
+    if (_numerator < 0 && _denominator < 0) {
+      _numerator *= -1;
+      _denominator *= -1;
+    }
+  }
 
-      System.out.print( r + " / " + t + " = ");
-      r.divide(t);
-      System.out.println(r);
-    /*~~~~~v~~~~~~~~~~down~goer~3~~~~~~~~~~~~~v~~~~~
-      ~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~*/
+
+  //calculates GCD/GCF of numerator and denominator
+  public int gcd()
+  {
+    return gcd( _numerator, _denominator );
+  }
+
+
+  //calculates GCD/GCF of two int inputs
+  public static int gcd( int n, int d )
+  {
+    int a, b, x;
+
+    a = n;
+    b = d;
+
+    while( a % b != 0 ) {
+      x = a;
+      a = b;
+      b = x % b;
+    }
+
+    return b;
+  }
+
+
+  /***
+   * boolean equals(Object) -- tells whether 2 Objs are equivalent
+   * pre:  other is an instance of class Rational
+   * post:
+   * @return true if this and other are aliases (pointers to same
+   *   Object), or if this and other have matching attribute values.
+   *   (which in this case indicates equivalent fractions)
+   ***/
+  public boolean equals( Object other )
+  {
+    if ( !(other instanceof Rational) ) {
+      System.out.println("not a rational");
+      return false;
+    }
+
+    //First, reduce both fractions.
+    //...thus allowing for direct comparison of attributes
+    this.reduce();
+    ((Rational)other).reduce();
+
+    return this == other //check for aliases
+      ||
+      ( this._numerator == ((Rational)other)._numerator
+        && this._denominator == ((Rational)other)._denominator);
+  }//end equals()
+
+
+  /***
+   * int compareTo(Object) -- tell which of two Rationals is greater
+   *  pre:
+   *  post:
+   * @throws exception if input not an instance of class Rational.
+   * @return 0 if this Rational equiv to Rational argument,
+   *         negative integer if this < other,
+   *         positive integer if this > other.
+   ***/
+  public int compareTo( Object other )
+  {
+    // If other is not a Rational, throw an exception
+    // This will exit the function, generating a runtime error
+    if ( ! (other instanceof Rational) ) {
+      // ClassCastException specified by Java API.
+      // Input String is optional; gives diagnostics info.
+      throw new ClassCastException("\nMy first error message! "
+                                   + " compareTo() input not a Rational");
+    }
+
+    int d = _denominator * ((Rational)other)._denominator;
+
+    //just for clarity below...
+    int thisNumerator   = _numerator * d;
+    int otherNumerator  = d * ((Rational)other)._numerator;
+
+    return thisNumerator - otherNumerator;
   }
 
 }//end class
